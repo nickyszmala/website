@@ -1,5 +1,6 @@
 body,div,figure,figcaption,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,menu,input,textarea,p,blockquote,th,td { margin:0; padding:0; }
 
+
 #main {
   color: white;
   margin-left: auto;
@@ -10,19 +11,33 @@ body,div,figure,figcaption,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset
 }
 
 #title {
-  font-family: 'Helvetica', sans-serif;
-  font-weight: 700;
+  font-family: 'Avenir', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 42px;
+  margin-bottom: 20px;
 }
 
 #content {
-  font-family: 'Helvetica', sans-serif;
-  font-weight: 300;
+  font-family: 'Avenir', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: normal;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 26pt;
+  margin-bottom: 40px;
+}
+
+a {
+  color: inherit;
+}
+
+.strong {
+  font-weight: bold;
+  font-style: italic;
+  color: #ff3300;
 }
 
 #links {
-  margin-top: 25px;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .row {
@@ -39,16 +54,135 @@ body,div,figure,figcaption,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset
 
 .icon {
   display: inline-block;
+  margin-bottom: 20px;
+}
+.icon a {
   width: 85px;
+  height: 85px;
+  display: inline-block;
+  background-size: 85px 85px;
+}
+#icon-linkedin {
+  background-image: url('images/icon_linkedin.png');
+}
+#icon-linkedin:hover, #icon-linkedin:active {
+  background-image: url('images/icon_linkedin_hover.png');
+}
+#icon-facebook {
+  background-image: url('images/icon_facebook.png');
+}
+#icon-facebook:hover, #icon-facebook:active {
+  background-image: url('images/icon_facebook_hover.png');
+}
+#icon-twitter {
+  background-image: url('images/icon_twitter.png');
+}
+#icon-twitter:hover, #icon-twitter:active {
+  background-image: url('images/icon_twitter_hover.png');
+}
+#icon-wechat {
+  background-image: url('images/icon_wechat.png');
+}
+#icon-wechat:hover, #icon-wechat:active {
+  background-image: url('images/icon_wechat_hover.png');
+}
+#icon-instagram {
+  background-image: url('images/icon_instagram.png');
+}
+#icon-instagram:hover, #icon-instagram:active {
+  background-image: url('images/icon_instagram_hover.png');
+}
+#icon-email {
+  background-image: url('images/icon_email.png');
+}
+#icon-email:hover, #icon-email:active {
+  background-image: url('images/icon_email_hover.png');
+}
+
+.button {
+  border: 1px solid;
+  border-radius: 20px;
+  font-family: 'Avenir', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  padding: 10px 0px;
+  width: 200px;
+  margin: 0 auto;
+}
+.button:hover {
+  background-color: #00bd7f;
+}
+.button:active {
+  background-color: #00bd7f;
+}
+#download-button {
+  text-decoration: none;
+}
+
+#portfolio {
+  margin-bottom: 50px;
 }
 
 @media only screen 
-and (min-width : 320px) 
-and (max-width : 480px) {
-  #main {
+and (min-device-width : 320px) 
+and (max-device-width : 1080px) {
+/*  #main {
     width: 100%;
+    margin-top: 120px;
   }
   #title {
-    font-size: 3em;
+    margin-bottom: 50px;
   }
+  #content {
+    line-height: 72px;
+  }
+  #links {
+    margin-top: 100px;
+  }
+*/
+  .row {
+/*    width: 80%;*/
+/*    margin-left: 10px;*/
+/*    margin-bottom: 50px;*/
+  }
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  #icon-linkedin {
+    background-image: url('images/icon_linkedin@2x.png');
+  }
+  #icon-linkedin:hover, #icon-linkedin:active {
+    background-image: url('images/icon_linkedin_hover@2x.png');
+  }
+  #icon-facebook {
+    background-image: url('images/icon_facebook@2x.png');
+  }
+  #icon-facebook:hover, #icon-facebook:active {
+    background-image: url('images/icon_facebook_hover@2x.png');
+  }
+  #icon-twitter {
+    background-image: url('images/icon_twitter@2x.png');
+  }
+  #icon-twitter:hover, #icon-twitter:active {
+    background-image: url('images/icon_twitter_hover@2x.png');
+  }
+  #icon-wechat {
+    background-image: url('images/icon_wechat@2x.png');
+  }
+  #icon-wechat:hover, #icon-wechat:active {
+    background-image: url('images/icon_wechat_hover@2x.png');
+  }
+  #icon-instagram {
+    background-image: url('images/icon_instagram@2x.png');
+  }
+  #icon-instagram:hover, #icon-instagram:active {
+    background-image: url('images/icon_instagram_hover@2x.png');
+  }
+  #icon-email {
+    background-image: url('images/icon_email@2x.png');
+  }
+  #icon-email:hover, #icon-email:active {
+    background-image: url('images/icon_email_hover@2x.png');
+  }
+  
 }

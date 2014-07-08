@@ -1,41 +1,65 @@
 <!DOCTYPE html>
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Nicky Szmala</title>
-    <link rel="stylesheet" href="master.css" type="text/css" media="screen" title="no title" charset="utf-8">
-    <!-- <link href='http://fonts.googleapis.com/css?family=Nunito:700,300' rel='stylesheet' type='text/css'> -->
+    <link rel="stylesheet" href="master.css" type="text/css" title="no title" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="tooltipster.css" />
     <script src="jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="jquery.tooltipster.min.js"></script>
     <script src="master.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        $(document).ready(function() {
+            $('.tooltip').tooltipster({
+                animation: 'fade',
+                speed: 200,
+                delay: 0,
+                touchDevices: false,
+                trigger: 'hover'
+            });
+        });
+    </script>
 </head>
-<body style="">
+<body ontouchstart="">
     <div id="main">
         <h1 id="title">Hi I'm Nicky.</h1>
         <div id="content">
-            Berliner living in Beijing.<br>Digital Director at Geometry Global.<br>Startup Advisor and Public Speaker.<br>New Dad.<br>Good ideas are my business.
+            Berliner living in Beijing.<br>
+            Digital Director at <span class="strong"><a href="#" class="tooltip" title="This is were I work">Geometry Global</a></span>.<br>
+            <a href="http://bit.ly/1m9Tiog" class="tooltip" title="Follow me on Angelist">Startup Advisor</a> and <a href="http://bit.ly/VxGT2D" class="tooltip" title="Some of my previous talks">Public Speaker</a>.<br>
+            <a href="#" class="tooltip" title="My little sunshine">New Dad</a>.<br>
+            <a href="#">Good ideas are my business</a>.
         </div>
         <div id="links">
             <div class="row">
                 <div class="icon">
-                    <a href="" target=""><img src="images/icon_linkedin.png" /></a>
+                    <a href="http://bit.ly/1dqkFEp" target="" id="icon-linkedin" class="tooltip" title="Become a member a of my network"></a>
                 </div>
                 <div class="icon">
-                    <a href="" target=""><img src="images/icon_facebook.png" /></a>
+                    <a href="http://on.fb.me/1yYCe92" target="" id="icon-facebook" class="tooltip" title="Lets be friends"></a>
                 </div>
                 <div class="icon">
-                    <a href="" target=""><img src="images/icon_twitter.png" /></a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="icon">
-                    <a href="" target=""><img src="images/icon_wechat.png" /></a>
+                    <a href="http://bit.ly/1rLvlTE" target="" id="icon-twitter" class="tooltip" title="Follow me"></a>
                 </div>
                 <div class="icon">
-                    <a href="" target=""><img src="images/icon_instagram.png" /></a>
+                    <a href="https://www.dropbox.com/s/ldlah4i39zfylr3/" target="" id="icon-wechat" class="tooltip" title="Let’s chat!"></a>
                 </div>
                 <div class="icon">
-                    <a href="" target=""><img src="images/icon_email.png" /></a>
+                    <a href="http://bit.ly/TtxmYG" target="" id="icon-instagram" class="tooltip" title="I do awesome pics"></a>
+                </div>
+                <div class="icon">
+                    <a href="" target="" id="icon-email" class="tooltip" title="Send me an email"></a>
                 </div>
             </div>
         </div>
+        <div id="portfolio">
+            <a href="" id="download-button">
+                <div class="button">
+                    Download Portfolio
+                </div>
+            </a>
+        </div>
     </div>
+    <script type="text/javascript" src="retina.min.js"></script>
 </body>
